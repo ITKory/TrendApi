@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  trendapi:
+    image: ${DOCKER_REGISTRY-}trendapi
+    build:
+      context: .
+      dockerfile: TrendApi\Dockerfile

@@ -7,11 +7,26 @@
     <InvariantGlobalization>true</InvariantGlobalization>
     <UserSecretsId>d798f11f-a854-47c2-b226-e7f887f20677</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="launchSettings.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="docker-compose.override.yml">
+      <DependentUpon>docker-compose.yml</DependentUpon>
+    </None>
   </ItemGroup>
 
 </Project>

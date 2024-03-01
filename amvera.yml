@@ -1,2 +1,4 @@
 ﻿build:
   dockerfile: ./TrendApi/Dockerfile
+run:
+  containerPort: 8080

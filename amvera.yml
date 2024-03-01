@@ -1,4 +1,5 @@
 ﻿build:
-  dockerfile: ./TrendApi/Dockerfile
+  dockerfile: ./TrendApi//Dockerfile
+  dockerfile: ./TrendApi//Dockerfile
 run:
   containerPort: 8080

@@ -5,4 +5,4 @@ services:
     image: ${DOCKER_REGISTRY-}trendapi
     build:
       context: .
-      dockerfile: TrendApi\Dockerfile
+      dockerfile: TrendApi/Dockerfile

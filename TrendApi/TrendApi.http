@@ -1,0 +1,6 @@
+@TrendApi_HostAddress = http://localhost:5018
+
+GET {{TrendApi_HostAddress}}/ 
+Accept: application/json
+
+###
